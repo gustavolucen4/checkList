@@ -1,0 +1,91 @@
+:root{
+   --azul-escuro1: #023059;
+   --azul-escuro2: #023E73;
+   --azul-claro1: #03658C;
+   --azul-claro2: #0388A6;
+   --azul-claro3: #04ADBF;
+   --main-gray: #303841;
+   --amarelo: #D98E04;
+}
+
+body{
+   background: var(--main-gray);
+   margin: 0;
+   padding: 0;
+   width: 100vw;
+   height: 100vh;
+}
+
+.checklist__container{
+   width: 550px;
+   min-height: 400px;
+   background-color: var(--azul-claro1);
+   padding: 1.5rem;
+   box-sizing: border-box;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   border-radius: 10px;
+   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.349);
+}
+
+.checlist__titulo{
+   font-family: cursive;
+   color: var(--amarelo);
+   font-size: 2rem;
+   font-weight: bold;
+   border-bottom: 1px solid var(--amarelo);
+   padding-bottom: 0.5rem ;
+   margin-bottom: 1rem;
+}
+
+.checklist__conteudo{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.checklist__cabecalho{
+   display: flex;
+   justify-content: center;
+}
+
+.checklist__input, .checklist__botao{
+   margin-right: .2rem;
+   font-size: 1.1rem;
+   padding: .5rem;
+}
+
+.checklist__botao{
+   background-color: var(--amarelo);
+   border: none;
+   border-radius: 5px;
+   color: var(--azul-escuro1);
+   transition: .3s;
+}
+
+.checklist__botao:hover{
+   cursor: pointer;
+   background-color: var(--azul-escuro2);
+   color: var(--amarelo);
+   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.247);
+}
+
+.checklist__lista{
+   width: 100%;
+}
+
+.lista__item{
+   background-color: var(--azul-escuro2);
+}
+
+.lista__paragrafo{
+   width: 75%;
+   margin: 1rem 0;
+   padding: .8rem;
+   color: var(--amarelo);
+   font-size: 1.2rem;
+   font-family: cursive;
+   font-weight: 300;
+}
