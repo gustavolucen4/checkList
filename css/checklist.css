@@ -122,12 +122,12 @@ body{
    .checklist__container{
       margin: 50px auto;
       width: 100%;
-      min-height: calc(100vh - 100px);
+      min-height: calc(100vh - 200px);
    }
    
    .checklist__input, .checklist__botao{
       margin-right: .2rem;
-      font-size: 1rem;
+      font-size: 1.1rem;
       padding: .4rem;
    }
    
