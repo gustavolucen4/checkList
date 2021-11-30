@@ -47,6 +47,11 @@ body{
    justify-content: center;
 }
 
+.lista__paragrafo{
+   display: flex;
+   flex-wrap: wrap;
+}
+
 .checklist__input, .checklist__botao{
    margin-right: .2rem;
    font-size: 1.1rem;
@@ -111,4 +116,19 @@ body{
 .botao--completar--done{
    text-decoration: line-through;
    color: var(--vermelho);
+}
+
+@media screen and (max-width: 768px) {
+   .checklist__container{
+      margin: 50px auto;
+      width: 100%;
+      min-height: calc(100vh - 100px);
+   }
+   
+   .checklist__input, .checklist__botao{
+      margin-right: .2rem;
+      font-size: 1rem;
+      padding: .4rem;
+   }
+   
 }

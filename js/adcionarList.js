@@ -31,7 +31,7 @@
 
    function concluirBtn(event){
       let paiElement = event.target.parentElement
-      let paragrafo = paiElement.querySelector('p')
+      let paragrafo = paiElement.querySelector('.lista__paragrafo')
       paragrafo.classList.toggle('botao--completar--done')
    }
 
