@@ -19,4 +19,15 @@ export const ordenaDatas = (data)=>{
       return primeiraData - segundaData
    })
 
-} 
+}
+
+export const ordenaHoras = (data)=>{
+
+   data.sort((a, b) =>{
+      const primeiraData = moment(a, 'DD/MM/YYYY').format('YYYYMMDD')
+      const segundaData = moment(b, 'DD/MM/YYYY').format('YYYYMMDD')
+
+      return primeiraData - segundaData
+   })
+   
+}

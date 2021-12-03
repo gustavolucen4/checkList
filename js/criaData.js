@@ -7,7 +7,6 @@ export const criaData = (data)=> {
    dataTopo.classList.add('lista__mini')
 
    const dataMoment = moment(data, 'DD/MM/YYYY')
-
    const conteudo = `<p class="lista__paragrafo--mini">${dataMoment.format('DD/MM/YYYY')}</p>`
 
    dataTopo.innerHTML = conteudo
@@ -19,7 +18,6 @@ export const criaData = (data)=> {
       if(diff === 0){
          dataTopo.appendChild(adicionarItem(element, id))
       }
-      
    })
 
    return dataTopo
