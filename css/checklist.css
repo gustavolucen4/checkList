@@ -17,7 +17,7 @@ body{
 
 .checklist__container{
    margin: 200px auto;
-   width: 550px;
+   width: 580px;
    min-height: 400px;
    background-color: var(--azul-claro1);
    padding: 1.5rem;
@@ -45,6 +45,10 @@ body{
 .checklist__cabecalho{
    display: flex;
    justify-content: center;
+}
+
+.checklist__input--data{
+   margin-right: 2px;
 }
 
 .lista__paragrafo{
@@ -78,10 +82,27 @@ body{
 }
 
 .lista__item{
-   margin: 1rem 0;
+   margin: .4rem 0;
    padding: .8rem;
    display: flex;
    background-color: var(--azul-escuro2);
+}
+
+.lista__mini{
+   width: 100%;
+
+   display: flex;
+   flex-direction: column;
+}
+
+.lista__paragrafo--mini{
+   margin: 1rem 0 .4rem 0;
+   padding: .8rem;
+   color: var(--amarelo);
+   font-size: 1.2rem;
+   font-family: cursive;
+   font-weight: 300;
+   background-color: var(--azul-escuro1);
 }
 
 .lista__paragrafo{
