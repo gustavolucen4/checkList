@@ -1,4 +1,5 @@
 import { adicionarItem } from "./adicionarItem.js";
+import { ordenaHoras } from "./datas.js";
 
 export const criaData = (data)=> {
    const tarefa = JSON.parse(localStorage.getItem('tarefas')) || []

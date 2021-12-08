@@ -21,13 +21,12 @@ export const ordenaDatas = (data)=>{
 
 }
 
-export const ordenaHoras = (data)=>{
+export const ordenaHoras = (hora)=>{
 
-   data.sort((a, b) =>{
-      const primeiraData = moment(a, 'DD/MM/YYYY').format('YYYYMMDD')
-      const segundaData = moment(b, 'DD/MM/YYYY').format('YYYYMMDD')
+   hora.sort((a, b) =>{
+      const primeiraHora = moment(a, 'HH:MM').format('HHMM')
+      const segundaHora = moment(b, 'HH:MM').format('HHMM')
 
-      return primeiraData - segundaData
+      return primeiraHora - segundaHora
    })
-   
 }
